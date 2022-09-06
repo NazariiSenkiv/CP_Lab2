@@ -1,0 +1,61 @@
+[
+  {
+    "type": "flat",
+    "generalHouseInfo": {
+      "address": "Stepana Bandery, 33",
+      "district": "Frankivskii",
+      "roomsCount": 3,
+      "squareMetersArea": 91.8,
+      "price": 90500.0,
+      "metersToSchool": 400.0,
+      "metersToKindergarten": 1005.0,
+      "metersToPlayground": 456.0
+    },
+    "flatInfo": {
+      "floor": 3,
+      "flatNumber": 308,
+      "balconyAvailability": false
+    }
+  },
+  {
+    "type": "mansion",
+    "generalHouseInfo": {
+      "address": "Shyroka, 31",
+      "district": "Zaliznychnyy",
+      "roomsCount": 5,
+      "squareMetersArea": 118.0,
+      "price": 110000.0,
+      "metersToKindergarten": 2566.0,
+      "metersToSchool": 666.0,
+      "metersToPlayground": 432.0
+    },
+    "mansionInfo": {
+      "gardenAvailability": true,
+      "yardSquareMetersArea": 498.9,
+      "floorsCount": 2,
+      "garageAvailability": true
+    }
+  },
+  {
+    "type": "penthouse",
+    "generalHouseInfo": {
+      "address": "Patoryzhynskoho, 20",
+      "district": "Frankivskii",
+      "roomsCount": 6,
+      "squareMetersArea": 130.7,
+      "price": 200000.0,
+      "metersToKindergarten": 540.0,
+      "metersToSchool": 907.0,
+      "metersToPlayground": 104.0
+    },
+    "flatInfo": {
+      "floor": 9,
+      "flatNumber": 901,
+      "balconyAvailability": true
+    },
+    "penthouseInfo": {
+      "poolAvailability": true,
+      "stunningViews": false
+    }
+  }
+]
