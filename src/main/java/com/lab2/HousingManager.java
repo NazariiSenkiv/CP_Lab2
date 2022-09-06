@@ -74,22 +74,14 @@ public class HousingManager {
         houses.forEach(x -> sortedHouses.add((House) x.clone()));
 
         Comparator<House> comparator;
-
-        if (descendingSort) {
-            comparator = new Comparator<House>() {
-                @Override
-                public int compare(House h1, House h2) {
-                    return h2.getMetersToSchool().compareTo(h1.getMetersToSchool());
-                }
-            };
-        } else {
-            comparator = new Comparator<House>() {
-                @Override
-                public int compare(House h1, House h2) {
-                    return h1.getMetersToSchool().compareTo(h2.getMetersToSchool());
-                }
-            };
-        }
+        comparator = new Comparator<House>() {
+            @Override
+            public int compare(House h1, House h2) {
+                return descendingSort
+                        ? h2.getMetersToSchool().compareTo(h1.getMetersToSchool())
+                        : h1.getMetersToSchool().compareTo(h2.getMetersToSchool());
+            }
+        };
 
         sortedHouses.sort(comparator);
 
